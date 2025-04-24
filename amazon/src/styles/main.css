@@ -169,7 +169,6 @@ h1 {
     transform: scale(1.05); 
 }
 
-/* 🖼 Product Details Page */
 .product-details {
     padding: 20px;
     text-align: center;
@@ -184,10 +183,9 @@ h1 {
 .product-details h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #4A90E2; /* Matches the app theme */
+    color: #4A90E2; 
 }
 
-/* Product Info Layout */
 .product-info {
     display: flex;
     gap: 20px;
@@ -210,10 +208,9 @@ h1 {
 .product-meta p {
     font-size: 1.2rem;
     margin: 10px 0;
-    color: #222; /* Ensure text is dark for readability */
+    color: #222; 
 }
 
-/* 🛒 Add to Cart Button */
 .add-to-cart {
     margin-top: 20px;
     padding: 10px 20px;
@@ -228,14 +225,13 @@ h1 {
 
 .add-to-cart:hover {
     background-color: #3A78C2;
-    transform: scale(1.05); /* Subtle scaling effect */
+    transform: scale(1.05); 
 }
 
-/* 📝 Loading/Error Messages */
 .loading,
 .error-message {
     font-size: 1.5rem;
-    color: #888; /* Subtle message color */
+    color: #888; 
     margin-top: 20px;
 }
 
