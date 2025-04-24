@@ -47,7 +47,8 @@ const ProductListing = ({ addToCart }) => {
 
     return (
         <div>
-            <h1>Product Listing</h1>
+            <h1>Our Featured Products</h1>
+            <h2>Find everything you need, all in one place!</h2>
 
             
             <SearchBar searchQuery={searchQuery} handleSearch={handleSearch} />

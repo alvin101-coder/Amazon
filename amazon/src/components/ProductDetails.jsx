@@ -23,21 +23,27 @@ const ProductDetails = () => {
     }, [id]); 
 
     if (loading) {
-        return <p>Loading product details...</p>;
+        return <p className='loading'>Loading product details...</p>;
     }
 
     if (!product) {
-        return <p>Product not found.</p>;
+        return <p className='error-message'>Product not found.</p>;
     }
 
     return (
-        <div>
+        <div className='product-details'>
             <h1>{product.title}</h1>
-            <img src={product.image} alt={product.title} style={{ maxWidth: '300px' }} />
+            <div className='product-info'>
+            <img src={product.image} alt={product.title} className='product-image' />
+            <div className='product-meta'>
             <p><strong>Price:</strong> ${product.price}</p>
             <p><strong>Category:</strong> {product.category}</p>
             <p>{product.description}</p>
+            </div>
         </div>
+        <button className='add-to-cart'>Add to Cart</button>
+        </div>
+
     );
 };
 
